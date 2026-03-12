@@ -110,9 +110,10 @@
     .image img:nth-child(2) {
         display: none;
     }
-    button#btn {
+    #btn {
         position: relative;
         z-index: 10;
     }
 
 }
+
