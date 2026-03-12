@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Martian Mono", monospace;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #f9f9ee;
+}
+.msg {
+    display: flex;
+    gap: 35px;
+}
+.image img{
+    height: 170px;
+    margin-left: -15px;
+}
+.txt-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.txt-box textarea {
+    height: 200px;
+    width: 400px;
+    padding: 10px 15px;
+    font-size: 17px;
+    resize: none;
+    overflow: hidden;
+}
+.txt-box a {
+    align-self: center;
+}
+.txt-box button {
+    width: 110px;
+    align-self: center;
+    padding: 15px 30px;
+    border: none;
+    color: aliceblue;
+    background: #000;
+}
+/* CARD PART  START HERE */
+
+.card-container{
+    height: 100vh;
+    width: 100vw;
+    background: #F5F5DB;
+}
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;
+}
+.card-container img{
+    height: 250px;
+}
+.card-box img {
+    position: relative;
+    z-index: 1;
+}
+#text{
+    max-width: 410px;           
+    max-height: 190px;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 18px;
+    white-space: pre-wrap; 
+    word-wrap: break-word;  
+    overflow: hidden;   
+    background: rgb(255, 255, 254);
+    transform: rotate(-2deg);
+    position: absolute;
+    z-index: 0;
+    top: 235px;
+}
+#dwn {
+    padding: 10px 15px;
+    align-self: center;
+    border: none;
+    color: aliceblue;
+    background: #000;
+    
+}
+/* CARD PART  ENDS HERE */
+
+@media (max-width: 768px) {
+    .msg {
+        position: relative;
+    }
+    .image {
+        position: absolute;
+        display: flex;
+        gap: 280px;
+        right: 0;
+        bottom: -10px;
+    }
+    .image img {
+        height: 120px;
+    }
+    .image img:nth-child(2) {
+        display: none;
+    }
+}

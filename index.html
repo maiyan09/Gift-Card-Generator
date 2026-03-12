@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="editor">
+        <h3>WRITE YOUR MESSAGE</h3>
+        <div class="msg">
+            <div class="image">
+                <img src="images/anemone.webp" alt="">
+                <img src="images/carnation.webp" alt="">
+                <img src="images/daisy.webp" alt="">
+            </div>
+            <div class="txt-box">
+                <textarea maxlength="240" name="" id="txt" 
+                placeholder="Dear,
+I have so much to tell you, but only this much space on this card! Still, you must know...
+
+note:write only 8 line"></textarea>
+                <button id="btn">NEXT</button>
+            </div>
+            <div class="image">
+                <img src="images/lily.webp" alt="">
+                <img src="images/carnation.webp" alt="">
+                <img src="images/sunflower.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="card-container" id="card" style="display:none;">
+        <div class="card-box">
+            <img src="images/card.png" alt="Card">
+            <div class="card-text" id="text"></div>
+        </div>
+        <button id="dwn">Click Here To Download</button>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</html>
